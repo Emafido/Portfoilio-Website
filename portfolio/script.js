@@ -98,7 +98,7 @@ sections.forEach(section => mainObserver.observe(section));
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
   const link = document.createElement("a");
-  link.href ="assets/My tech resume.pdf"; 
+  link.href ="./assets/My tech resume.pdf"; 
   link.download = "Emafido_Emmanuel_Resume.pdf";
   link.click();
 });
@@ -109,3 +109,4 @@ navItems.forEach(item => {
     nav.classList.remove("open");
   });
 });
+
