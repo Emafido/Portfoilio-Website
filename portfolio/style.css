@@ -8,6 +8,11 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
 }
+@media (max-width:480px) {
+   html{
+    scroll-padding-top: 150px;
+   }
+}
 body {
   font-family: "Poppins", sans-serif;
   background: radial-gradient(circle at top left, #0f172a, #020617 60%);
@@ -810,4 +815,5 @@ main {
   overflow: hidden;
   height: 8px;
 }
+
 
