@@ -102,3 +102,10 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
   link.download = "Emafido_Emmanuel_Resume.pdf";
   link.click();
 });
+const navItems = document.querySelectorAll('.navitems');
+
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    nav.classList.remove("open");
+  });
+});
