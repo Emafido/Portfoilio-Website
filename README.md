@@ -1,4 +1,4 @@
-# Personal Developer Portfolio Website  Portfolio
+# Personal Developer Portfolio Website
 
 A clean, responsive, and modern personal portfolio website built with HTML, CSS, and vanilla JavaScript to showcase projects, skills, and professional experience.
 
