@@ -109,21 +109,29 @@ if (downloadBtn) {
     link.click();
   });
 }
+// --- Custom Cursor Logic (Desktop Only) ---
 const cursorDot = document.querySelector('.cursor-dot');
 const cursorOutline = document.querySelector('.cursor-outline');
 
-window.addEventListener('mousemove', (e) => {
-  const posX = e.clientX;
-  const posY = e.clientY;
+// Only initialize if it's not a touch device
+if (window.matchMedia("(pointer: fine)").matches) {
+  window.addEventListener('mousemove', (e) => {
+    const posX = e.clientX;
+    const posY = e.clientY;
 
-  cursorDot.style.left = `${posX}px`;
-  cursorDot.style.top = `${posY}px`;
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
 
-  cursorOutline.animate({
-    left: `${posX}px`,
-    top: `${posY}px`
-  }, { duration: 500, fill: "forwards" });
-});
+    cursorOutline.animate({
+      left: `${posX}px`,
+      top: `${posY}px`
+    }, { duration: 500, fill: "forwards" });
+  });
+} else {
+  // Hide the elements on mobile/touch
+  if (cursorDot) cursorDot.style.display = 'none';
+  if (cursorOutline) cursorOutline.style.display = 'none';
+}
 // --- Typewriter Effect Logic ---
 const phrases = ["Full Stack Engineer", "Web3 Developer", "Frontend Enthusiast", "Backend Specialist", "Tech Innovator"];
 let phraseIndex = 0;

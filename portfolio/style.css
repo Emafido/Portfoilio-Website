@@ -137,7 +137,7 @@ main {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -225,7 +225,7 @@ main {
 #about {
   position: relative;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .section-header {
@@ -711,7 +711,25 @@ main {
     padding: 0 5%;
   }
 }
+@media (max-width: 800px) {
+  body {
+    cursor: auto !important; 
+  }
 
+  .hero {
+    min-height: auto; 
+    padding-top: 120px; 
+    padding-bottom: 40px;
+  }
+
+  #about {
+    margin-top: 40px; 
+  }
+
+  .hero-text {
+    margin-top: 20px; 
+  }
+}
 @media (max-width: 768px) {
   #menu {
     display: flex;
