@@ -713,6 +713,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .hero{
+    min-height: 100vh;
+  }
   #menu {
     display: flex;
   }
