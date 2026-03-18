@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -66,6 +66,8 @@
     <title>Emafido Emmanuel's Portfolio Website</title>
   </head>
   <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
     <!-- Header Section -->
     <header>
       <a href="" class="logo">Emafid<span>o</span></a>
@@ -101,7 +103,7 @@
         <div class="hero-text">
           <span>Hello!</span>
           <h1>I'm <span>Emafido Emmanuel </span></h1>
-          <p>Frontend Web Developer</p>
+          <p class="typewriter-text"><span id="typewriter"></span><span class="cursor-blink">|</span></p>
           <div class="btns">
             <a href="#contact">Hire Me</a>
             <a href="#portfolio">My Works</a>
@@ -128,27 +130,27 @@
               class="about-main-img"
             />
             <div class="about-icon">
-              <i class="fa-solid fa-user-plus"></i>
+              <i class="fa-solid fa-code"></i>
             </div>
             <div class="experience-badge">
-              <div class="number">2</div>
+              <div class="number">3</div>
               <div class="text">
-                Successful <br />
-                Years
+                Years <br />
+                Experience
               </div>
             </div>
           </div>
           <div class="bio">
             <h3>My Bio</h3>
             <p class="bio-text">
-              I'm Emafido Emmanuel Aridon — a curious and driven developer
-              passionate about building smart, efficient systems that bridge
-              hardware and software. I'm currently focused on full-stack
-              development, combining my background in computer engineering with
-              a growing interest in AI and blockchain. I love turning ideas into
-              real, functional projects and continuously push myself to learn
-              new technologies, improve my craft, and create solutions that make
-              an impact.
+              I am Emafido Emmanuel, a Full Stack Software Engineer with 3 years
+              of experience architecting end-to-end digital platforms. I
+              specialize in bridging the gap between seamless user interfaces
+              and highly scalable backend architectures. My technical expertise
+              spans developing interactive frontends with React and Next.js, to
+              building secure, high-performance backends and database systems
+              using Go, Node.js, and PostgreSQL. I focus on writing clean,
+              efficient code to build systems that solve real-world problems.
             </p>
             <div class="bio-details">
               <div class="bio-item">
@@ -156,16 +158,12 @@
                 <span>Emafido Emmanuel</span>
               </div>
               <div class="bio-item">
-                <label>Address</label>
+                <label>Location</label>
                 <span>Lagos, Nigeria</span>
               </div>
               <div class="bio-item">
                 <label>Email</label>
                 <span>emmanuelemafido@gmail.com</span>
-              </div>
-              <div class="bio-item">
-                <label>Phone Number</label>
-                <span>+234 814 276 3125</span>
               </div>
               <div class="bio-item">
                 <label>Work Status</label>
@@ -180,120 +178,79 @@
       <!-- Skills section -->
       <section id="skills" class="section fade-in">
         <div class="section-header">
-          <div class="section-label">Skills</div>
-          <h2 class="section-title">
-            I work hard to Improve My <br />Skills Regularly
-          </h2>
+          <div class="section-label">Tech Stack</div>
+          <h2 class="section-title">Tools & Technologies</h2>
         </div>
-        <div class="skills-grid">
-          <div class="skill-column">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">HTML</span>
-                <span class="skill-percentage">95%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="95"></div>
-              </div>
+
+        <div class="skills-slider">
+          <div class="skills-track">
+            <div class="skill-slide">
+              <i class="fa-brands fa-html5"></i><span>HTML</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">CSS</span>
-                <span class="skill-percentage">90%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="90"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-percentage">65%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="65"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-js"></i><span>JavaScript</span>
             </div>
-          </div>
-          <div class="skill-column">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">TypeScript</span>
-                <span class="skill-percentage">25%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="25"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-react"></i><span>React</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-react"></i><span>Next.js</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-node-js"></i><span>Node.js</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-golang"></i><span>Go</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-python"></i><span>Python</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-solid fa-database"></i><span>PostgreSQL</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-git-alt"></i><span>Git</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-ethereum"></i><span>Solidity</span>
             </div>
 
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">Python</span>
-                <span class="skill-percentage">45%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="45"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-html5"></i><span>HTML</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">Git</span>
-                <span class="skill-percentage">50%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="50"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-css3-alt"></i><span>CSS</span>
             </div>
-          </div>
-          <div class="skill-column">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">Tailwind CSS</span>
-                <span class="skill-percentage">80%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="80"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-js"></i><span>JavaScript</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">React</span>
-                <span class="skill-percentage">85%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="35"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-react"></i><span>React</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">Solidity</span>
-                <span class="skill-percentage">10%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="10"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-react"></i><span>Next.js</span>
             </div>
-          </div>
-          <div class="skill-column">
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">NextJS</span>
-                <span class="skill-percentage">65%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="65"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-node-js"></i><span>Node.js</span>
             </div>
-            <div class="skill-item">
-              <div class="skill-header">
-                <span class="skill-name">Move</span>
-                <span class="skill-percentage">5%</span>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="5"></div>
-              </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-golang"></i><span>Go</span>
             </div>
-            
+            <div class="skill-slide">
+              <i class="fa-brands fa-python"></i><span>Python</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-solid fa-database"></i><span>PostgreSQL</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-git-alt"></i><span>Git</span>
+            </div>
+            <div class="skill-slide">
+              <i class="fa-brands fa-ethereum"></i><span>Solidity</span>
+            </div>
           </div>
         </div>
       </section>
@@ -310,325 +267,207 @@
         <div class="portfolio-grid">
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/tspeed.png" alt="Coffee Shop" />
+              <img src="./assets/ghost.png" alt="Ghost Intel Platform" />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
-                  <h3>A Typing Speed webapp</h3>
-                  <p>A website for calculating typing speed and accuracy</p>
+                  <h3>Ghost Intel</h3>
+                  <p>
+                    AI lead enrichment platform with Web3 smart contracts on
+                    Base Sepolia, Google Gemini, and a Node.js/MongoDB backend.
+                  </p>
                   <div class="portfolio-links">
                     <a
-                      href="https://github.com/Emafido/typing-speed"
+                      href="https://github.com/Emafido/ghost"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
-                      href="https://tspeed-fm30.vercel.app/"
+                      href="https://ghost-six-chi.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/Sui.png" alt="Coffee Shop" />
+              <img src="./assets/verity.png" alt="Verity Marketplace" />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
-                  <h3>SuiSecureDrop </h3>
-                  <p>A website made on the Sui blockchain for reversable and pin-protected transfer of assets.</p>
+                  <h3>Verity</h3>
+                  <p>
+                    A dual-sided marketplace bridging elite technicians and
+                    clients, featuring AI-driven verification and secure booking
+                    simulations.
+                  </p>
+                  <div class="portfolio-links">
+                    <a
+                      href="https://github.com/Emafido/verity"
+                      target="_blank"
+                      class="portfolio-link"
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
+                    <a
+                      href="https://verity-ivory.vercel.app/"
+                      target="_blank"
+                      class="portfolio-link"
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="portfolio-image">
+              <img src="./assets/Sui.png" alt="SuiSecureDrop" />
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>SuiSecureDrop</h3>
+                  <p>
+                    A smart contract interface on the Sui blockchain enabling
+                    reversible and PIN-protected digital asset transfers.
+                  </p>
                   <div class="portfolio-links">
                     <a
                       href="https://github.com/Emafido/Suiproject"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
                       href="https://suiproject-tau.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/health.png" alt="Coffee Shop" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>SerrielleHealth</h3>
-                  <p>A website for pregnant women to stay informed and connect with other pregnant women.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/Health"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://health-one-vert.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/clinic.png" alt="Coffee Shop" />
+              <img src="./assets/clinic.png" alt="ClinicFlow Platform" />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
                   <h3>ClinicFlow</h3>
-                  <p>A queue management website for clinics and small hospitals.</p>
+                  <p>
+                    A robust queue and operations management system engineered
+                    for clinics and healthcare facilities.
+                  </p>
                   <div class="portfolio-links">
                     <a
                       href="https://github.com/Emafido/Horbit"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
                       href="https://clinicflow-eight.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/spark.png" alt="Coffee Shop" />
+              <img src="./assets/health.png" alt="SerrielleHealth" />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
-                  <h3>Spark</h3>
-                  <p>An AI powered study ecosystem made for teachers and students.</p>
+                  <h3>SerrielleHealth</h3>
+                  <p>
+                    A specialized digital health platform for expectant mothers
+                    to access verified medical information and community
+                    support.
+                  </p>
                   <div class="portfolio-links">
                     <a
-                      href="https://github.com/Emafido/Spark"
+                      href="https://github.com/Emafido/Health"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
-                      href="https://spark-ruddy-xi.vercel.app/"
+                      href="https://health-one-vert.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/wanderlust.png" alt="Coffee Shop" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>Wanderlust</h3>
-                  <p>A simple tech,food and lifestyle blog website.</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/Task-4"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://task-4-sable-one.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/Coffee.png" alt="Coffee Shop" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>Coffee Shop</h3>
-                  <p>A website for a coffee shop</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/Starbucks-coffee"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://starbucks-coffee-nine.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-       
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/mealfinder.png" alt="MealFinder App" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>A Meal Finder Website</h3>
-                  <p>A simple website to find meals for your ingredients</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/Meal-Search"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://meal-search-blue.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/Bridge.png" alt="Website for deaf people" />
+              <img
+                src="./assets/Bridge.png"
+                alt="Bridge Accessibility Platform"
+              />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
                   <h3>Bridge</h3>
-                  <p>A speech to text website for deaf people</p>
+                  <p>
+                    An accessibility-focused speech-to-text platform designed to
+                    facilitate seamless communication for the deaf and hard of
+                    hearing.
+                  </p>
                   <div class="portfolio-links">
                     <a
                       href="https://github.com/Emafido/Bridge"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
                       href="https://bridge-connect-ecru.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="portfolio-item">
             <div class="portfolio-image">
-              <img src="./assets/Quote.png" alt="A Random Quote Generator" />
+              <img src="./assets/tspeed.png" alt="Typing Speed App" />
               <div class="portfolio-overlay">
                 <div class="portfolio-info">
-                  <h3>A Random Quote Generator</h3>
-                  <p>A simple website that generates random quotes</p>
+                  <h3>Typing Speed Analyzer</h3>
+                  <p>
+                    A performance-tracking web application that calculates and
+                    visualizes typing speed and accuracy metrics in real-time.
+                  </p>
                   <div class="portfolio-links">
                     <a
-                      href="https://github.com/Emafido/Quote-Generator"
+                      href="https://github.com/Emafido/typing-speed"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
+                      ><i class="fa-solid fa-link"></i
+                    ></a>
                     <a
-                      href="https://quote-generator-six-weld.vercel.app/"
+                      href="https://tspeed-fm30.vercel.app/"
                       target="_blank"
                       class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/Taskflow.png" alt="TaskFlow" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>A Task Management Website</h3>
-                  <p>A simple website for TaskFlow</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/TaskFlow"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://task-flow-spok.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        
-          <div class="portfolio-item">
-            <div class="portfolio-image">
-              <img src="./assets/Quiz.png" alt="QUiz Website" />
-              <div class="portfolio-overlay">
-                <div class="portfolio-info">
-                  <h3>A Quiz App</h3>
-                  <p>A simple Quiz Website</p>
-                  <div class="portfolio-links">
-                    <a
-                      href="https://github.com/Emafido/Quiz-Game"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-link"></i>
-                    </a>
-                    <a
-                      href="https://quiz-game-five-murex.vercel.app/"
-                      target="_blank"
-                      class="portfolio-link"
-                    >
-                      <i class="fa-solid fa-eye"></i>
-                    </a>
+                      ><i class="fa-solid fa-eye"></i
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -728,4 +567,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-
