@@ -105,7 +105,7 @@ if (downloadBtn) {
   downloadBtn.addEventListener("click", () => {
     const link = document.createElement("a");
     link.href ="./assets/Emafido_Emmanuel_CV.pdf"; 
-    link.download = "Emafido_Emmanuel_Resume.pdf";
+    link.download = "Emafido_Emmanuel_CV.pdf";
     link.click();
   });
 }
