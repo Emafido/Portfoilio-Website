@@ -711,25 +711,7 @@ main {
     padding: 0 5%;
   }
 }
-@media (max-width: 800px) {
-  body {
-    cursor: auto !important; 
-  }
 
-  .hero {
-    min-height: auto; 
-    padding-top: 120px; 
-    padding-bottom: 40px;
-  }
-
-  #about {
-    margin-top: 40px; 
-  }
-
-  .hero-text {
-    margin-top: 20px; 
-  }
-}
 @media (max-width: 768px) {
   #menu {
     display: flex;
